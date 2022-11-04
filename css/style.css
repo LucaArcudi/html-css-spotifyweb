@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utilities */
+
+.flex{
+    display: flex;
+}
+
+header{
+    height: calc(100vh - 80px);
+    width: 230px;
+    background-color: black;
+}
+
+main{
+    background-color: #141922;
+    width: calc(100vw - 230px);
+}
+
+main section.upgrade{
+    height: 80px;
+    background-color: #080B12;
+}
+
+footer{
+    background-color: #282828;
+    width: 100vw;
+    height: 80px;
+}
