@@ -4,17 +4,21 @@
     box-sizing: border-box;
 }
 
-/* utilities */
+/* --------------------UTILITIES----------------- */
 
 .flex{
     display: flex;
 }
+
+/* --------------------HEADER-------------------- */
 
 header{
     height: calc(100vh - 80px);
     width: 230px;
     background-color: black;
 }
+
+/* --------------------MAIN---------------------- */
 
 main{
     background-color: #141922;
@@ -26,8 +30,37 @@ main section.upgrade{
     background-color: #080B12;
 }
 
+/* --------------------FOOTER-------------------- */
+
 footer{
     background-color: #282828;
     width: 100vw;
     height: 80px;
+}
+
+/* --------------------MEDIUM-------------------- */
+/* --------------------MEDIUM-------------------- */
+
+@media screen and (max-width: 991px){
+    
+}
+
+/* --------------------SMALL--------------------- */
+/* --------------------SMALL--------------------- */
+
+@media screen and (max-width: 767px){
+    
+}
+
+/* --------------------X-SMALL------------------- */
+/* --------------------X-SMALL------------------- */
+
+@media screen and (max-width: 575px){
+    header{
+        width: 40px;
+    }
+
+    main{
+        width: calc(100vw - 40px);
+    }
 }
