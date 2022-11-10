@@ -10,10 +10,27 @@
     display: flex;
 }
 
+.container{
+    padding: 1rem 0 1rem 1rem;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+/* --------------------BODY---------------------- */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.wrapper{
+    height: calc(100vh - 80px);    
+}
+
 /* --------------------HEADER-------------------- */
 
 header{
-    height: calc(100vh - 80px);
     width: 230px;
     background-color: black;
 }
@@ -23,11 +40,67 @@ header{
 main{
     background-color: #141922;
     width: calc(100vw - 230px);
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 main section.upgrade{
     height: 80px;
     background-color: #080B12;
+}
+
+main section.nav-elements{
+    height: 60px;
+}
+
+main section.container{
+    color: #FFFFFF;
+}
+
+section.container h2{
+    margin-bottom: 2rem;
+}
+
+div.rp-albums div.rp-album{
+    width: calc(100% / 6 - 1rem);
+    margin-right: 1rem;
+}
+
+div.cover{
+    margin-bottom: 1rem;
+}
+
+div img{
+    max-width: 100%;
+}
+
+div.info{
+    text-align: center;
+}
+
+span{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+div.info span.album-name{
+    font-size: 13px;
+}
+
+div.info span.album-other,
+h2 span
+{
+    color: #707277;
+    font-size: 11px;
+}
+
+h2 span{
+    margin-top: 0.5rem;
+}
+
+section.popular-artists img{
+    border-radius: 100%;
 }
 
 /* --------------------FOOTER-------------------- */
@@ -42,14 +115,18 @@ footer{
 /* --------------------MEDIUM-------------------- */
 
 @media screen and (max-width: 991px){
-    
+    div.rp-albums div.rp-album{
+        width: calc(100% / 4 - 1rem);
+    }    
 }
 
 /* --------------------SMALL--------------------- */
 /* --------------------SMALL--------------------- */
 
 @media screen and (max-width: 767px){
-    
+    div.rp-albums div.rp-album{
+        width: calc(100% / 2 - 1rem);
+    }
 }
 
 /* --------------------X-SMALL------------------- */
