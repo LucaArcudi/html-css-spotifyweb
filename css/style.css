@@ -41,6 +41,7 @@ header{
     color: #6e6e6e;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 div.logo img{
@@ -136,7 +137,7 @@ section.header-bot hr{
 
 main{
     background-color: #141922;
-    width: calc(100vw - 230px);
+    width: calc(100% - 230px);
     overflow: auto;
     overflow-x: hidden;
 }
@@ -238,7 +239,7 @@ section.popular-artists img{
 
 footer{
     background-color: #282828;
-    width: 100vw;
+    width: 100%;
     height: 80px;
 }
 
@@ -322,7 +323,7 @@ footer{
     }
 
     main{
-        width: calc(100vw - 40px);
+        width: calc(100% - 40px);
     }
 
 }
