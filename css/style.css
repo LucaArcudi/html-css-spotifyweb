@@ -144,11 +144,44 @@ main{
 main section.upgrade{
     height: 80px;
     background-color: #080B12;
+    position: relative;
+}
+
+section.upgrade button{
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    background-color: #080B12;
+    border: 1px solid white;
+    color: white;
+    padding: 0.75rem 3rem;
+    margin-right: 1rem;
+    border-radius: 10rem;
 }
 
 main section.nav-elements{
-    height: 60px;
+    color: #6e6e6e;
+    justify-content: center;
+    padding: 2rem 0;
+    font-size: 14px;
+    font-weight: 600;
 }
+
+section.nav-elements ul{
+    list-style: none;
+}
+
+section.nav-elements ul li{
+    margin-right: 1rem;
+    padding: 0.2rem 0;
+}
+
+section.nav-elements ul li:first-child{
+    border-bottom: 2px solid #ADFF2F;
+}
+
+
+/* RECENTLY PLAYED */
 
 main section.container{
     color: #FFFFFF;
@@ -215,7 +248,7 @@ footer{
 @media screen and (max-width: 991px){
     div.rp-albums div.rp-album{
         width: calc(100% / 4 - 1rem);
-    }    
+    }
 }
 
 /* --------------------SMALL--------------------- */
