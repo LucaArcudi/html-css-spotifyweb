@@ -11,16 +11,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <div class="wrapper flex">
-        <header>
-            <nav>
-                <section class="logo"></section>
-                <section class="nav-options"></section>
-                <section class="playlists"></section>
-                <section class="download-app"></section>
-            </nav>
+        <header class="flex">
+            <section class="header-top">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="">
+                    <img src="./img/logo-small.svg" alt="">
+                </div>
+                <nav class="nav-options">
+                    <ul>
+                        <li>
+                            <img src="./img/home.svg" alt="">
+                            <span>Home</span>
+                        </li>
+                        <li>
+                            <img src="./img/search.svg" alt="">
+                            <span>Cerca</span>
+                        </li>
+                        <li>
+                            <img src="./img/libreria.svg" alt="">
+                            <span>La tua libreria</span>
+                        </li>                                                                             </li>
+                    </ul>
+                </nav>
+                <div class="playlists">
+                    <h2>Playlist</h2>
+                    <a href="">
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span class="new-pl">Crea Playlist</span>
+                    </a>
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="header-bot">
+                <div class="download-app">
+                    <a href="">
+                        <img src="./img/download.svg" alt="">
+                        <span>Installa app</span>
+                    </a>
+                </div>
+                <hr>
+                <div class="user">
+                    <a href="">
+                        <img src="./img/profile.svg" alt="">
+                        <span>John Doe</span>
+                    </a>
+                </div>
+            </section>
         </header>
 
         <main>

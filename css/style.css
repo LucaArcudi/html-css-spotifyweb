@@ -18,6 +18,11 @@
     flex-wrap: wrap;
 }
 
+a{
+    text-decoration: none;
+    color: #6e6e6e;
+    display: block;
+}
 /* --------------------BODY---------------------- */
 
 body{
@@ -33,6 +38,98 @@ div.wrapper{
 header{
     width: 230px;
     background-color: black;
+    color: #6e6e6e;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.logo img{
+    padding: 2rem;
+}
+
+div.logo img:last-child{
+    display: none;
+}
+
+nav.nav-options{
+    margin-bottom: 1rem;
+}
+
+nav.nav-options li:first-child{
+    border-left: 4px solid #ADFF2F;
+    color: #D2D2D2;
+}
+
+nav.nav-options li{
+    padding: 0.5rem 2rem;
+    border-left: 4px solid transparent;
+}
+
+nav.nav-options li img{
+    height: 1.5rem;
+    vertical-align: text-bottom;
+    margin-right: .5rem;
+}
+
+nav.nav-options li span{
+    display: inline;
+}
+
+div.playlists{
+    padding: 0.5rem 2rem;
+}
+
+div.playlists h2{
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+div.playlists a i{
+    font-size: 3rem;
+    color: #A3A3A3;
+}
+
+div.playlists span.new-pl{
+    vertical-align:60%;
+}
+
+div.playlists ul{
+    list-style: none;
+}
+
+div.playlists ul li{
+    padding: 0.5rem 0;
+}
+
+section.header-bot{
+    padding: 0.5rem 2rem;
+}
+
+section.header-bot img{
+    height: 1.5rem;
+    vertical-align: middle;
+}
+
+div.download-app img{
+    height:1rem;
+}
+
+div.download-app span,
+div.user span
+{
+    display: inline;
+}
+
+div.user img{
+    background-color: #6e6e6e;
+    border-radius: 100%;
+}
+
+section.header-bot hr{
+    background-color: #6e6e6e;
+    border: none;
+    height: 1px;
+    margin: 1rem 0;
 }
 
 /* --------------------MAIN---------------------- */
@@ -78,7 +175,7 @@ div.info{
     text-align: center;
 }
 
-span{
+div.info span{
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
@@ -97,6 +194,7 @@ h2 span
 
 h2 span{
     margin-top: 0.5rem;
+    display: block;
 }
 
 section.popular-artists img{
@@ -134,10 +232,64 @@ footer{
 
 @media screen and (max-width: 575px){
     header{
-        width: 40px;
+        width: 60px;
+    }
+
+    div.logo img{
+        display: none;
+        padding: 1.1rem;
+    }
+
+    div.logo img:last-child{
+        display: inline-block;
+    }
+
+    nav.nav-options li:first-child{
+        border-left: 0px solid #ADFF2F;
+        color: #D2D2D2;
+    }
+
+    nav.nav-options li{
+        padding: 1rem 1rem;
+        border-left: 0px solid transparent;
+    }
+
+    nav.nav-options li img{
+        height: 100%;
+        width: 100%;
+    }
+
+    nav.nav-options li span{
+        display: none;
+    }
+
+    div.playlists{
+        display: none;
+    }
+
+    section.header-bot{
+        padding: 1rem 1rem;
+    }
+
+    section.header-bot hr{
+        display: none;
+    }
+
+    div.download-app span,
+    div.user span
+    {
+        display: none;
+    }
+
+    div.download-app img,
+    div.user img{
+        padding: 0rem 0.3rem;
+        margin-bottom: 1rem;
+        
     }
 
     main{
         width: calc(100vw - 40px);
     }
+
 }
